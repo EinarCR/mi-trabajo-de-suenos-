@@ -1,0 +1,132 @@
+/* Estilos generales de la página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+  margin: 0;
+  padding: 0;
+}
+
+/* Selector de id: encabezado principal */
+#encabezado {
+  background: #0f172a;
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+  padding: 40px 20px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+#encabezado h1 {
+  margin: 0 0 15px 0;
+}
+
+#encabezado p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Selector de id: contenedor de contenido */
+#contenido {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Selector de clase: tarjetas de sección */
+.tarjeta {
+  background: #ffffff;
+  width: 260px;
+  height: auto;
+  height: auto;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  overflow: auto;
+}
+
+.tarjeta.tabla-tarjeta {
+  width: 340px;
+}
+
+.tarjeta h2 {
+  color: #0f172a;
+  font-size: 18px;
+}
+
+/* Selector de clase: texto resaltado con span */
+.resaltado {
+  background: #fde68a;
+  color: #7c2d12;
+  padding: 2px 6px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #cbd5e1;
+  padding: 6px;
+  text-align: left;
+  font-size: 13px;
+}
+
+th {
+  background: #e2e8f0;
+}
+
+.imagen-seccion {
+  text-align: center;
+}
+
+.imagen-seccion img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Selector de id: pie de página */
+#pie {
+  background: #0f172a;
+  color: #cbd5e1;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Responsive: pantallas angostas */
+@media (max-width: 700px) {
+  #contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta,
+  .tarjeta.tabla-tarjeta {
+    width: 90%;
+  }
+
+  #encabezado {
+    padding: 30px 15px;
+  }
+
+  #encabezado h1 {
+    font-size: 24px;
+  }
+}
